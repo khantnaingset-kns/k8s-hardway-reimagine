@@ -6,6 +6,8 @@ cd ~
 
 echo $'\e[32;Instaling go and cfssl tools'
 
+sleep 2
+
 curl -OL https://golang.org/dl/go1.21.4.linux-amd64.tar.gz
 
 sha256sum go1.21.4.linux-amd64.tar.gz
@@ -32,6 +34,7 @@ sudo go install github.com/cloudflare/cfssl/cmd/cfssljson@latest
 
 echo $'\e[32;Instaling go and cfssl tools'
 
+sleep 2
 
 sudo apt update
 
