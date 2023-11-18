@@ -1,20 +1,13 @@
-resource "google_compute_instance" "k8s-master-node" {
-  name         = "K8sMasterNode"
-  machine_type = "e2-standard-2"
-  zone         = "us-central1-a"
+module "vpc_network" {
+  source       = "./vpc"
+  vpc_name     = var.vpc_name
+}
 
-  boot_disk {
-    initialize_params {
-      image = "debian-cloud/debian-11"
-    }
-  }
-
-  // Local SSD disk
-  scratch_disk {
-    interface = "NVME"
-  }
-
-  network_interface {
-    network = "default"
-  }
+module "subnet_network" {
+  source      = "./subnet"
+  subnet_name = var.subnet_name
+  region      = var.region
+  vpc_id      = module.vpc_network.vpc_id
+  subnet_ipcidr_range = var.subnet_ipcidr_range
+  depends_on  = [module.vpc_network]
 }
