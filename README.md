@@ -3,9 +3,10 @@
 # Scope
 
 - Setup Kubernetes cluster from scratch using with the aid of Terraform as a IaC
-    - Number of Nodes
-        - 1 Master
-        - 3 workers
+    - Base Infra cluster
+        - Number of Nodes
+            - 1 Master
+            - 3 workers
 
 # Steps
 
