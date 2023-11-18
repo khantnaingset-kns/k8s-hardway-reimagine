@@ -6,8 +6,6 @@ cd ~
 
 echo $'\e[32;Instaling go and cfssl tools'
 
-sleep 2
-
 curl -OL https://golang.org/dl/go1.21.4.linux-amd64.tar.gz
 
 sha256sum go1.21.4.linux-amd64.tar.gz
@@ -24,17 +22,16 @@ rm go1.21.4.linux-amd64.tar.gz
 
 # Install cfssl
 
-go install github.com/cloudflare/cfssl/cmd/cfssl@latest
+sudo go install github.com/cloudflare/cfssl/cmd/cfssl@latest
 
 # Install cfssljson
 
-go install github.com/cloudflare/cfssl/cmd/cfssljson@latest
+sudo go install github.com/cloudflare/cfssl/cmd/cfssljson@latest
 
 # Install kubectl
 
 echo $'\e[32;Instaling go and cfssl tools'
 
-sleep 2
 
 apt update
 
