@@ -4,7 +4,7 @@ cd ~
 
 # Download and Install go
 
-echo 'Installing go and cfssl tools'
+printf '---------- Installing go and cfssl tools ----------'
 
 sleep 2
 
@@ -32,13 +32,13 @@ sudo go install github.com/cloudflare/cfssl/cmd/cfssljson@latest
 
 # Install kubectl
 
-echo 'Installing kubectl'
+printf '--------- Installing kubectl ----------'
 
 sleep 2
 
 sudo apt update
 
-sudo apt install  -y apt-transport-https ca-certificates curl gpg
+sudo apt install  -y apt-transport-https ca-certificates curl
 
 curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
 
