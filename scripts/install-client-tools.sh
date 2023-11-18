@@ -4,7 +4,7 @@ cd ~
 
 # Download and Install go
 
-echo $'\e[32;Instaling go and cfssl tools'
+echo $'\e[32; Instaling go and cfssl tools'
 
 sleep 2
 
@@ -16,7 +16,7 @@ sudo tar -C /usr/local -xvf go1.21.4.linux-amd64.tar.gz
 
 echo 'export PATH=$PATH:/usr/local/go/bin' > ~/.profile
 
-source ~/.profile
+. ~/.profile
 
 # Clean up
 
