@@ -4,7 +4,7 @@ cd ~
 
 # Download and Install go
 
-printf '---------- Installing go and cfssl tools ----------'
+echo '---------- Installing go and cfssl tools ----------'
 
 sleep 2
 
@@ -32,7 +32,7 @@ go install github.com/cloudflare/cfssl/cmd/cfssljson@latest
 
 # Install kubectl
 
-printf '--------- Installing kubectl ----------'
+echo '--------- Installing kubectl ----------'
 
 sleep 2
 
