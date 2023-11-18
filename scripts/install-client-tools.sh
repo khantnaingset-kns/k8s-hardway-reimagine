@@ -32,7 +32,7 @@ sudo go install github.com/cloudflare/cfssl/cmd/cfssljson@latest
 
 # Install kubectl
 
-echo $'\e[32;Instaling go and cfssl tools'
+echo $'\e[32; Installing kubectl'
 
 sleep 2
 
