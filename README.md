@@ -1,4 +1,4 @@
-# Kubernetes the Hard way with Terraform
+# Kubernetes the Hard way with Terraform (Reimagine)
 
 # Scope
 
