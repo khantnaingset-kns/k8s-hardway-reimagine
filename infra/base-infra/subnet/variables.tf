@@ -14,6 +14,6 @@ variable "region" {
 }
 
 variable "subnet_ipcidr_range" {
-  type = string
+  type        = string
   description = "IP CIDR range of the subnet"
 }
