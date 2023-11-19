@@ -62,6 +62,10 @@ sudo apt install -y kubectl
 
 # Install gcloud
 
+echo '---------------------------------------------------'
+echo '--------- Installing google cloud cli ----------'
+echo '---------------------------------------------------'
+
 update_apt
 
 echo "deb https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
